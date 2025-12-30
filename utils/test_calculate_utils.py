@@ -34,6 +34,7 @@ class TestCalculateSum:
     def test_calculate_sum_comprehensive(self, a: int, b: int, expected: int) -> None:
         """包括的なパラメータ化テスト"""
         result = calculate_sum(a, b)
+        # assert: 条件の検証(Falseの時だけエラーを出す)
         assert result == expected
         assert isinstance(result, int)
 
